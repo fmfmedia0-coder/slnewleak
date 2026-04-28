@@ -11,30 +11,106 @@
             text-align: center;
             margin: 0;
             padding: 20px;
+            overflow-x: hidden;
         }
         h1 {
             color: #FF00FF;
-            font-size: 38px;
-            text-shadow: 0 0 15px red;
+            font-size: 42px;
+            text-shadow: 0 0 20px red, 0 0 40px #FF1493;
+            animation: glow 1.5s infinite alternate;
             margin: 10px;
         }
         h2 {
             color: #FFD700;
-            font-size: 24px;
+            font-size: 26px;
+            animation: pulse 2s infinite;
         }
         .photos img {
-            width: 300px;
-            height: 400px;
-            margin: 12px;
-            border: 4px solid #FF00FF;
-            border-radius: 15px;
-            box-shadow: 0 0 20px red;
+            width: 290px;
+            height: 420px;
+            margin: 15px;
+            border: 5px solid #FF00FF;
+            border-radius: 20px;
+            box-shadow: 0 0 25px red;
+            transition: all 0.4s;
+        }
+        .photos img:hover {
+            transform: scale(1.08) rotate(2deg);
+            box-shadow: 0 0 40px #FF1493;
         }
         button {
             background: #FF1493;
             color: white;
-            padding: 18px 50px;
-            font-size: 24px;
+            padding: 20px 60px;
+            font-size: 26px;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+            margin: 30px 10px;
+            box-shadow: 0 0 30px #FF00FF;
+            animation: pulseButton 1.5s infinite;
+        }
+        button:hover {
+            background: #FF69B4;
+            transform: scale(1.1);
+        }
+
+        @keyframes glow {
+            from { text-shadow: 0 0 10px red; }
+            to { text-shadow: 0 0 40px #FF00FF; }
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        @keyframes pulseButton {
+            0% { box-shadow: 0 0 20px #FF00FF; }
+            50% { box-shadow: 0 0 50px #FF1493; }
+        }
+
+        .heart {
+            position: absolute;
+            font-size: 30px;
+            animation: floatHeart 6s linear infinite;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>🔥 SRI LANKAN NEW LEAK XXX 🔥</h1>
+    <h2>🍑 Colombo • Negombo • Kandy • Galle Hot Leaks 2026 🍑</h2>
+    <p><strong>18+ අලුත්ම ලීක් වීඩියෝ සහ Private Nudes ඕනෙද? දැන්ම බලන්න බඩුව! 😈</strong></p>
+
+    <div class="photos">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEia3OnZ70ml47k_SvZwUQ9xaJ1MBs9eGOBsNe2kD5OpTA9i47-fS0htnfik9lD9GA1GzXHnU_e9qAb4fut2we-n10TrlYIFlx55aLPvO5fUjycP7Aldt974wjTv6i6VfeuZsIUE_FmS7HU/s1600/18698141_240642733086157_3730267769054143616_n" alt="SL Girl Leak">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfmAcgQLPpPJ-YnWmXtsBLt6AdZbWN05U1kg&s" alt="Negombo Hot">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpry7_QxhaHFxkPpzVjNqydVgTOivPph2bSg&s" alt="Colombo Aunty">
+    </div>
+
+    <br><br>
+    <button onclick="window.location.href='login.html'">
+        🍑 CLICK HERE TO WATCH FULL VIDEOS & PHOTOS 😈
+    </button>
+
+    <!-- Floating hearts animation -->
+    <script>
+        function createHeart() {
+            const heart = document.createElement('div');
+            heart.className = 'heart';
+            heart.innerHTML = '🍑';
+            heart.style.left = Math.random() * 100 + 'vw';
+            heart.style.animationDuration = Math.random() * 4 + 5 + 's';
+            document.body.appendChild(heart);
+
+            setTimeout(() => heart.remove(), 8000);
+        }
+
+        setInterval(createHeart, 300);
+    </script>
+
+</body>
+</html>            font-size: 24px;
             border: none;
             border-radius: 12px;
             cursor: pointer;

